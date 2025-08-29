@@ -1,10 +1,35 @@
 public class transaksi 
 {
+    //atribut
     private String idtransaksi;
-    private String idpetugas;   
-    private String idpelanggan;
-    private String idbarang;
+    private String namaptgs;   
+    private String namaplgn;
+    private String namabrg;
     private int jumlah;
     private int totalharga;
     private String tanggal;
+
+    // Constructor
+    public transaksi(String idtransaksi, String namaptgs, String namaplgn, String namabrg, int jumlah, int totalharga, String tanggal)
+    {
+        this.idtransaksi = idtransaksi;
+        this.namaptgs = namaptgs;
+        this.namaplgn = namaplgn;
+        this.namabrg = namabrg;
+        this.jumlah = jumlah;
+        this.totalharga = totalharga;
+        this.tanggal = tanggal;
+    }
+
+    public void tampilkanstruk()
+    {
+        System.out.println("=== STRUK TRANSAKSI ===");
+        System.out.println("ID Transaksi : " + idtransaksi);
+        System.out.println("Tanggal      : " + tanggal);
+        System.out.println("Pelanggan    : " + pelanggan.getnamaplgn());
+        System.out.println("Petugas      : " + petugas.getnamaptgs());
+        System.out.println("Barang       : " + barang.getnamabrg() + " x " + jumlah);
+        System.out.println("Total Harga  : " + totalharga);
+        System.out.println("=======================");
+    }
 }
