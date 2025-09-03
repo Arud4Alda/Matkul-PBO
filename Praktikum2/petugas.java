@@ -27,9 +27,9 @@ public class petugas
 
     public void tammpilkanpetugas() 
     {
-        System.out.println("ID Petugas : " + idpetugas + "\n");
-        System.out.println("Nama       : " + namaptgs + "\n");
-        System.out.println("Alamat     : " + alamat + "\n");
-        System.out.println("Telepon    : " + telepon);
+        System.out.println("ID Petugas : " + idpetugas);
+        System.out.println("Nama       : " + namaptgs);
+        System.out.println("Alamat     : " + alamat);
+        System.out.println("Telepon    : " + telepon+ "\n");
     }
 }

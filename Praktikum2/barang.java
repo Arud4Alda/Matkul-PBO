@@ -45,10 +45,10 @@ public class barang
 
     public void tampilkanbarang() 
     {
-        System.out.println("ID Barang : " + idbarang + "\n");
-        System.out.println("Nama      : " + namabrg + "\n");
-        System.out.println("Jenis     : " + jenis + "\n");
-        System.out.println("Harga     : " + harga + "\n");
-        System.out.println("Stok      : " + stok);
+        System.out.println("ID Barang : " + idbarang);
+        System.out.println("Nama      : " + namabrg);
+        System.out.println("Jenis     : " + jenis);
+        System.out.println("Harga     : " + harga );
+        System.out.println("Stok      : " + stok + "\n");
     }
 }

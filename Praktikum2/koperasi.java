@@ -18,9 +18,12 @@ public class koperasi
     static void seedData() 
     {
         pelangganList.add(new pelanggan("P01", "Alda"));
+        pelangganList.add(new pelanggan("P02", "Aldi"));
+        pelangganList.add(new pelanggan("P03", "Aldo"));
         petugasList.add(new petugas("T01", "Budi", "Jakarta", "081234"));
         barangList.add(new barang("B01", "Buku Tulis", "ATK", 5000, 10));
         barangList.add(new barang("B02", "Pulpen", "ATK", 3000, 15));
+        barangList.add(new barang("B03", "Tipe X", "ATK", 4000, 15));
     }
 
     static void menuUtama() 
@@ -109,8 +112,12 @@ public class koperasi
             pelangganList.add(pl);
 
             petugas pt = petugasList.get(0); // sementara pilih petugas pertama
-
-            menuInfoBarang();
+            System.out.println("\n=== DAFTAR BARANG ===");
+            for (barang b : barangList) 
+            {
+                b.tampilkanbarang();
+                System.out.println("-------------------");
+            }
             System.out.print("Pilih ID Barang: ");
             String idb = sc.nextLine();
 

@@ -23,7 +23,7 @@ public class pelanggan
 
     public void tampilkanpelanggan() 
     {
-        System.out.println("ID Pelanggan : " + idpelanggan + "\n");
-        System.out.println("Nama         : " + namaplgn);
+        System.out.println("ID Pelanggan : " + idpelanggan);
+        System.out.println("Nama         : " + namaplgn + "\n");
     }
 }

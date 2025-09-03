@@ -23,12 +23,12 @@ public class transaksi
 
     public void tampilkanstruk()
     {
-        System.out.println("=== STRUK TRANSAKSI ===");
+        System.out.println("\n=== STRUK TRANSAKSI ===");
         System.out.println("ID Transaksi : " + idtransaksi);
         System.out.println("Tanggal      : " + tanggal);
-        System.out.println("Pelanggan    : " + pelanggan.getnamaplgn());
-        System.out.println("Petugas      : " + petugas.getnamaptgs());
-        System.out.println("Barang       : " + barang.getnamabrg() + " x " + jumlah);
+        System.out.println("Pelanggan    : " + namaplgn);
+        System.out.println("Petugas      : " + namaptgs);
+        System.out.println("Barang       : " + namabrg + " x " + jumlah);
         System.out.println("Total Harga  : " + totalharga);
         System.out.println("=======================");
     }
