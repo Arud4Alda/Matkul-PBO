@@ -1,29 +1,25 @@
 package id.ac.polban.koperasi.model;
-public class pelanggan {
-    //atribut
-    private String idpelanggan;
-    private String namaplgn;
-
+public class pelanggan extends Orang{
+    
     // Constructor
     public pelanggan(String idpelanggan, String namaplgn)
     {
-        this.idpelanggan = idpelanggan;
-        this.namaplgn = namaplgn;
+        super(idpelanggan,namaplgn);
     }
 
     public String getidpelanggan() 
     {
-        return idpelanggan;
+        return super.getId();
     }
 
     public String getnamaplgn() 
     {
-        return namaplgn;
+        return super.getNama();
     }
 
     public void tampilkanpelanggan() 
     {
-        System.out.println("ID Pelanggan : " + idpelanggan);
-        System.out.println("Nama         : " + namaplgn + "\n");
+        System.out.println("ID Pelanggan : " + getidpelanggan());
+        System.out.println("Nama         : " + getnamaplgn() + "\n");
     }
 }

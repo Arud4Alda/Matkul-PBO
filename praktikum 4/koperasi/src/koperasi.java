@@ -27,9 +27,10 @@ public class koperasi
         pelangganList.add(new pelanggan("P02", "Aldi"));
         pelangganList.add(new pelanggan("P03", "Aldo"));
         petugasList.add(new petugas("T01", "Budi", "Jakarta", "081234"));
-        barangList.add(new barang("B01", "Buku Tulis", "ATK", 5000, 10));
-        barangList.add(new barang("B02", "Pulpen", "ATK", 3000, 15));
-        barangList.add(new barang("B03", "Tipe X", "ATK", 4000, 15));
+        barangList.add(new ATK("B01", 5000, 10, "Buku Tulis", "Alat Tulis", "Big Boss"));
+        barangList.add(new ATK("B02", 10000, 15, "Lanyard", "Aksesoris", "B-Live"));
+        barangList.add(new Sembako("S01", 15000, 20, "Minyak Goreng", "Minyak", "Sania"));
+        barangList.add(new Sembako("S02", 15000, 30, "Beras", "Bahan Pangan", "Pandan Wangi"));
     }
 
     //menu utama
@@ -103,7 +104,7 @@ public class koperasi
             System.out.println("\n=== INFO BARANG ===");
             for (barang b : barangList) 
             {
-                b.tampilkanbarang();
+                System.out.println(b);
             }
             System.out.println("0. Kembali ke Menu Utama");
             int back = sc.nextInt(); sc.nextLine();
@@ -126,7 +127,7 @@ public class koperasi
             System.out.println("\n=== DAFTAR BARANG ===");
             for (barang b : barangList) 
             {
-                b.tampilkanbarang();
+                System.out.println(b); 
                 System.out.println("-------------------");
             }
             System.out.print("Pilih ID Barang: ");
