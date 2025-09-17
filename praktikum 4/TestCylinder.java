@@ -28,5 +28,10 @@ public class TestCylinder
             + " height=" + c3.getHeight() 
             + " base area=" + c3.getArea() 
             + " volume=" + c3.getVolume()); 
+
+        // Use superclass method toString() to print 
+        System.out.println(c1.toString());
+        System.out.println(c2.toString());
+        System.out.println(c3.toString());
     }
 }
