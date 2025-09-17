@@ -1,6 +1,8 @@
+package task;
+
 public class Cylinder extends Circle 
 {
-     private double height;  // private variable 
+    private double height;  // private variable 
     
    // Constructor with default color, radius and height 
    public Cylinder() 
@@ -46,5 +48,5 @@ public class Cylinder extends Circle
     public String toString() // in Cylinder class
     {       
         return "Cylinder: subclass of " + super.toString() + " height=" + height; 
-    }
+    }    
 }

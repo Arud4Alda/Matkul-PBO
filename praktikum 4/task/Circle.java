@@ -1,6 +1,8 @@
+package task;
+
 public class Circle 
 {
-       // private instance variable, not accessible from outside this class 
+    // private instance variable, not accessible from outside this class 
         private double radius; 
         private String color;  
 
