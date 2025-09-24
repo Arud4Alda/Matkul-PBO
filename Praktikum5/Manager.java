@@ -1,6 +1,6 @@
 import java.util.GregorianCalendar;
 import java.util.Calendar;
-public class Manager extends Employee {
+public class Manager extends Employee implements Sortable{
     private String secretaryName;
 
     public Manager(String n, double s, int d, int m, int y) {
