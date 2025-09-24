@@ -1,6 +1,6 @@
 package goods;
 
-public class Taxable {
+public interface Taxable {
     double taxRate = 0.06;
     
     public double calculateTax();
