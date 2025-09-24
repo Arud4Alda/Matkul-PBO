@@ -31,17 +31,6 @@ public class Employee implements Sortable
         return salary;
     }
 
-    //@Override
-    // public int compare(Sortable b) {
-    //     Employee eb = (Employee) b;
-    //     if (this.salary < eb.salary) {
-    //         return -1;
-    //     }
-    //     if (this.salary > eb.salary) {
-    //         return +1;
-    //     }
-    //     return 0;
-    // }
     public int compare(Sortable b) {
         Employee eb = (Employee) b;
         if (salary < eb.salary) {
