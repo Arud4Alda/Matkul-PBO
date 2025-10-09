@@ -1,8 +1,8 @@
-package SK3;
+
 
 public class WeeklySales 
 {
-    public static void main(Strings[] args)
+    public static void main(String[] args)
     {
         Salesperson[] salesStaff  = new Salesperson [10];
 

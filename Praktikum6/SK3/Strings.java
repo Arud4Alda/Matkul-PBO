@@ -1,8 +1,8 @@
-package SK3;
+
 import java.util.Scanner;
-public class Strings 
+public class Strings
 {
-    public static void main(Strings[] args) 
+    public static void main(String[] args) 
     {
         String[] list; 
         int size;

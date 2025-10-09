@@ -1,4 +1,4 @@
-package SK3;
+
 
 public class Salesperson  implements Comparable<Salesperson>
 {
@@ -14,7 +14,7 @@ public class Salesperson  implements Comparable<Salesperson>
 
     public String toString()
     {
-        return lastName + ", " + firstName + ": \t" + totalSales;
+        return lastName + " " + firstName + ": \t" + totalSales;
     }
 
     public boolean equals (Object other)
@@ -26,20 +26,18 @@ public class Salesperson  implements Comparable<Salesperson>
     public int compareTo (Salesperson otherSalesperson)
     {
         int result;
+        result = this.totalSales - otherSalesperson.totalSales;
 
-        if (this.totalSales != otherSalesperson.totalSales) {
-            result = otherSalesperson.totalSales - this.totalSales; // Descending Sales
-        }
-        // 2. Jika Sales Sama (Tie-breaker)
-        else {
-            // Bandingkan Last Name (Ascending)
+        if (result == 0) 
+        {
+        // Bandingkan Nama (Alphabetical/Ascending)
             result = this.lastName.compareTo(otherSalesperson.lastName);
             
-            // Jika Last Name juga sama, bandingkan First Name (Ascending)
-            if (result == 0) {
+            if (result == 0) 
+            {
                 result = this.firstName.compareTo(otherSalesperson.firstName);
             }
-        }
+        }    
 
         return result;
     }

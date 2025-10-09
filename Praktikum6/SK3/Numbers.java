@@ -1,8 +1,8 @@
-package SK3;
+
 import java.util.Scanner;
 public class Numbers
 {
-    public static void main(Strings[] args) {
+    public static void main(String[] args) {
         Integer[] intlist;
         int size;
 
